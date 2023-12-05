@@ -142,19 +142,43 @@ switch(valor){
 //     break;
 // }
 
-let entrada = prompt("Ingresar un nombre").toUpperCase();
+// let entrada = prompt("Ingresar un nombre").toUpperCase();
 
-while (entrada != "ESC") {
-  switch (entrada) {
-    case "ANA":
-      alert("HOLA ANA");
-      break;
-    case "JUAN":
-      alert("HOLA JUAN");
-      break;
-    default:
-      alert("¿QUIÉN SOS?");
-      break;
+// while (entrada != "ESC") {
+//   switch (entrada) {
+//     case "ANA":
+//       alert("HOLA ANA");
+//       break;
+//     case "JUAN":
+//       alert("HOLA JUAN");
+//       break;
+//     default:
+//       alert("¿QUIÉN SOS?");
+//       break;
+//   }
+//   entrada = prompt("Ingresar un nombre");
+// }
+
+let cantidad = Number(
+  prompt("Ingrese hasta que valor quiere visualizas la secuancia de Fibonacci")
+);
+if (isNaN(cantidad)) {
+  alert("Usted no ingresó un numero");
+} else {
+  let secuencia = "1";
+  let numeroAnterior = 0;
+  let numeroActual = 1;
+  let numeroSuma = 0;
+  if (cantidad == 1) {
+    alert("La secuencia es: " + secuencia);
+  } else {
+    for (let i = 1; i <= cantidad; i++) {
+      numeroSuma = numeroAnterior + numeroActual;
+      secuencia += ` ${numeroSuma}`;
+      numeroAnterior = numeroActual;
+      numeroActual = numeroSuma;
+    }
   }
-  entrada = prompt("Ingresar un nombre");
+
+  alert("La secuencia es: " + secuencia);
 }
