@@ -168,21 +168,25 @@ estructura de un objeto
 // producto1.vender();
 // console.log(producto1);
 
-class Producto {
-  constructor(nombre, precio, cantidad) {
-    this.nombre = nombre;
-    this.precio = precio;
-    this.cantidad = cantidad;
-  }
+// class Producto {
+//   constructor(nombre, precio, cantidad) {
+//     this.nombre = nombre;
+//     this.precio = precio;
+//     this.cantidad = cantidad;
+//   }
 
-  vender() {
-    this.cantidad -= 1; // this.cantidad = this.cantidad - 1
-  }
-}
+//   vender() {
+//     this.cantidad -= 1; // this.cantidad = this.cantidad - 1
+//   }
+// }
 
-const producto1 = new Producto("camisa", 1000, 5);
-console.log(producto1);
-producto1.vender();
-console.log(producto1);
-producto1.vender();
-console.log(producto1);
+// const producto1 = new Producto("camisa", 1000, 5);
+// console.log(producto1);
+// producto1.vender();
+
+// if (producto1.cantidad > 0){
+//   producto1.vender();
+// }
+// console.log(producto1);
+// producto1.vender();
+// console.log(producto1);
