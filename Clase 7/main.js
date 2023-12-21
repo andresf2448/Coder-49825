@@ -135,12 +135,12 @@
 
 // console.log(preciosNavidad);
 
-const productos = [
-  { id: 1, nombre: "camisa", precio: 1000, categoria: "hombre" },
-  { id: 2, nombre: "zapato", precio: 700, categoria: "mujer" },
-  { id: 3, nombre: "gorra", precio: 850, categoria: "hombre" },
-  { id: 4, nombre: "media", precio: 320, categoria: "mujer" },
-];
+// const productos = [
+//   { id: 1, nombre: "camisa", precio: 1000, categoria: "hombre" },
+//   { id: 2, nombre: "zapato", precio: 700, categoria: "mujer" },
+//   { id: 3, nombre: "gorra", precio: 850, categoria: "hombre" },
+//   { id: 4, nombre: "media", precio: 320, categoria: "mujer" },
+// ];
 
 //reduce reduce un arreglo a un único valor
 // const numeros = [1, 3, 4, 56, 7, 8];
