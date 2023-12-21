@@ -70,36 +70,60 @@
 //Dado un arreglo de premios, crear una función que retorne un premio
 //el programa debe decir aleatoriamente que persona ha ganado y que premio
 
-const nombres = ["pablo", "pepito", "juan", "camila", "andres", "pedrito", "carlitos"];
-const premios = ["computador", "monitor", "celular", "gorra", "pantalon"];
+// const nombres = ["pablo", "pepito", "juan", "camila", "andres", "pedrito", "carlitos"];
+// const premios = ["computador", "monitor", "celular", "gorra", "pantalon"];
 
-const generarNombreAleatorio = () => {
-  let indice = Math.floor(Math.random() * nombres.length);
+// const generarNombreAleatorio = () => {
+//   let indice = Math.floor(Math.random() * nombres.length);
 
-  return nombres[indice];
-};
+//   return nombres[indice];
+// };
 
-const generarPremioAleatorio = () => {
-  let indice = Math.floor(Math.random() * premios.length);
+// const generarPremioAleatorio = () => {
+//   let indice = Math.floor(Math.random() * premios.length);
 
-  return premios[indice];
-};
+//   return premios[indice];
+// };
 
-console.log(
-  `Nombre del ganador ${generarNombreAleatorio()} Premio ${generarPremioAleatorio()}`
-);
-console.log(
-  `Nombre del ganador ${generarNombreAleatorio()} Premio ${generarPremioAleatorio()}`
-);
-console.log(
-  `Nombre del ganador ${generarNombreAleatorio()} Premio ${generarPremioAleatorio()}`
-);
-console.log(
-  `Nombre del ganador ${generarNombreAleatorio()} Premio ${generarPremioAleatorio()}`
-);
-console.log(
-  `Nombre del ganador ${generarNombreAleatorio()} Premio ${generarPremioAleatorio()}`
-);
-console.log(
-  `Nombre del ganador ${generarNombreAleatorio()} Premio ${generarPremioAleatorio()}`
-);
+// console.log(
+//   `Nombre del ganador ${generarNombreAleatorio()} Premio ${generarPremioAleatorio()}`
+// );
+// console.log(
+//   `Nombre del ganador ${generarNombreAleatorio()} Premio ${generarPremioAleatorio()}`
+// );
+// console.log(
+//   `Nombre del ganador ${generarNombreAleatorio()} Premio ${generarPremioAleatorio()}`
+// );
+// console.log(
+//   `Nombre del ganador ${generarNombreAleatorio()} Premio ${generarPremioAleatorio()}`
+// );
+// console.log(
+//   `Nombre del ganador ${generarNombreAleatorio()} Premio ${generarPremioAleatorio()}`
+// );
+// console.log(
+//   `Nombre del ganador ${generarNombreAleatorio()} Premio ${generarPremioAleatorio()}`
+// );
+
+//DATE
+// console.log(Date());
+// let navidad = new Date(2023, 11, 24, 23, 59, 59);
+// console.log(navidad);
+
+// let navidad = new Date("December 24, 2023 23:59:59");
+// console.log(navidad);
+// console.log(navidad.toDateString());
+// console.log(navidad.toLocaleString());
+// console.log(navidad.toLocaleDateString());
+// console.log(navidad.toTimeString());
+// console.log(navidad.getFullYear());
+// console.log(navidad.getMonth());
+// console.log(navidad.getDay());
+
+let navidad = new Date("December 24, 2023 23:59:59");
+let hoy = new Date("December 20, 2023");
+
+console.log(navidad - hoy);
+
+const milisegundosPorDia = 86400000;
+
+console.log((navidad - hoy) / milisegundosPorDia);
