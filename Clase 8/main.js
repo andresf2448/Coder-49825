@@ -69,3 +69,37 @@
 //Dado un arreglo de nombres, crear una función que retorne un nombre aleatorio
 //Dado un arreglo de premios, crear una función que retorne un premio
 //el programa debe decir aleatoriamente que persona ha ganado y que premio
+
+const nombres = ["pablo", "pepito", "juan", "camila", "andres", "pedrito", "carlitos"];
+const premios = ["computador", "monitor", "celular", "gorra", "pantalon"];
+
+const generarNombreAleatorio = () => {
+  let indice = Math.floor(Math.random() * nombres.length);
+
+  return nombres[indice];
+};
+
+const generarPremioAleatorio = () => {
+  let indice = Math.floor(Math.random() * premios.length);
+
+  return premios[indice];
+};
+
+console.log(
+  `Nombre del ganador ${generarNombreAleatorio()} Premio ${generarPremioAleatorio()}`
+);
+console.log(
+  `Nombre del ganador ${generarNombreAleatorio()} Premio ${generarPremioAleatorio()}`
+);
+console.log(
+  `Nombre del ganador ${generarNombreAleatorio()} Premio ${generarPremioAleatorio()}`
+);
+console.log(
+  `Nombre del ganador ${generarNombreAleatorio()} Premio ${generarPremioAleatorio()}`
+);
+console.log(
+  `Nombre del ganador ${generarNombreAleatorio()} Premio ${generarPremioAleatorio()}`
+);
+console.log(
+  `Nombre del ganador ${generarNombreAleatorio()} Premio ${generarPremioAleatorio()}`
+);
