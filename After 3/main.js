@@ -48,4 +48,16 @@
 
 // agregarProducto(nombre, precio);
 
-//crear una funcion que pasado un id elimine el producto del localStorage
+//crear una funcion que pasado un id elimine el producto del localStorage(filter)
+
+const eliminarProducto = (id) => {
+  let carritoStorage = localStorage.getItem("carrito");
+  let data = JSON.parse(carritoStorage);
+
+  let filtrados = data.filter((item) => item.id !== id);
+
+  localStorage.setItem("carrito", JSON.stringify(filtrados));
+};
+
+let id = Number(prompt("ingrese el id para eliminar"));
+eliminarProducto(id);
