@@ -279,3 +279,22 @@ operador1 || operador2 retorna operador1 si este es verdadero, en caso contrario
 // const nombres = ["andres", "juanita", "pedrito", "carlitos"];
 // const [a, , b] = nombres;
 // console.log(a, b);
+
+const persona = {
+  nombre: "pepito",
+  usuario: null,
+};
+
+const pedirDatos = () => {
+  let usuario = promp("Ingrese el nombre");
+  let edad = promp("Ingrese la edad");
+
+  let objeto = {
+    nombre: usuario,
+    edad,
+  };
+
+  return objeto;
+};
+
+const nuevoUsuario = persona.usuario || pedirDatos();
